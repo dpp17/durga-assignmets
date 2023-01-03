@@ -27,13 +27,23 @@ function prime(){
 r=0
 }
 
+#for num in 1 2 3 4 5 6
+
+
+
 for((x=$ln; x<=$rn; x++))
 do
 	prime $x
 	count4=$(($count4+1))
 done
+
+
+
+
+
+
 printf "\n"
-ECHO "Total numbers in given range :: " $count4
+echo "Total numbers in given range :: " $count4
 echo "Total Prime Numbers :: " $count2
 echo "Total Non-prime/Composite Number :: " $count1
 echo  "Entry of '1' :: " $count3

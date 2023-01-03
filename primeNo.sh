@@ -20,3 +20,4 @@ then
 else
 	echo "Neither Prime Nor Composite number :: $n"
 fi
+echo $(($n/2))
