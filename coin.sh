@@ -4,6 +4,7 @@ echo " ****** Flip a coin ****** "
 flip=11
 h=0
 t=0
+
 while (( $h != $flip && $t != $flip ))
 do
 	face=$(($RANDOM%2))
@@ -16,5 +17,11 @@ do
 done
 echo "heads :: " $h
 echo "tails :: " $t
+printf "\n"
 
-
+if [ $h -gt $t ]
+then
+	echo "Head Wins!!"
+else
+	echo "Tail Wins!!"
+fi
